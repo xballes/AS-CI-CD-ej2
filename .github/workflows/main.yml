@@ -1,8 +1,13 @@
-name: advanced-security/python-lint-code-scanning-action@v1
+name: Prueba Python
+
 on: push
-jobs: 
-  tareas:
+
+jobs:
+  test-python:
     runs-on: ubuntu-latest
     permissions:
       security-events: write
-    
+    steps:
+      - uses: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: pylint
