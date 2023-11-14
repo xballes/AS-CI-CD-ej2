@@ -1,4 +1,4 @@
-function sumar2numero(a,b):
+def sumar2numero(a,b):
   suma=a+b
   print(suma)
 
